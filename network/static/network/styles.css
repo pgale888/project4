@@ -1,0 +1,33 @@
+div.page {
+    display: none;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+.content {
+    margin: 0;
+    padding: 0;
+}
+
+.post {
+    border: 1px solid royalblue;
+    background-color: lightgoldenrodyellow;
+    padding: 3px;
+    width: 95%;
+    margin: 2px auto;
+}
+
+.editarea {
+    width: 95%;
+    max-width: 95%;
+}
+
+.centre {
+    text-align: center;
+    width: auto;
+    padding-top: 5px;
+    padding-bottom: 2px;
+    height: 80px;
+}

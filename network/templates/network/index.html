@@ -1,0 +1,37 @@
+{% extends "network/layout.html" %}
+{%  load static %}
+
+{% block body %}
+{% if user.is_authenticated %}
+    <div id="new-post-view">
+    <h5> New Post</h5>
+        <form id="new-post-form">
+            <textarea class="form-control" id="new-post-content" placeholder="Post"></textarea>
+            <input type="submit" class="btn btn-primary" onmouseup="this.blur()">
+        </form>
+    </div>
+{% endif %}
+    <div id='profile-view'>
+
+    {% if user.is_authenticated %}
+        <div id="follow-button-view">
+
+        </div>
+    {% endif %}
+    </div>
+    <div id='posts-view'>
+
+    </div>
+    <div class="centre" id="post-nav-view">
+        <button class="btn btn-light" id="previous-button">Previous</button>
+        <button class="btn btn-light" id="next-button">  Next  </button>
+    </div>
+    <div id="edit-view">
+    
+    </div>
+
+{% endblock %}
+
+{% block script %}
+    <script src="{% static 'network/script.js' %}"></script>
+{% endblock %}
